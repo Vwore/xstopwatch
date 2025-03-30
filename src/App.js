@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <h1>Stopwatch</h1>
-      <div>{formatTime(second)}</div>
+      <div>Time:{formatTime(second)}</div>
       <form>
         {timer.current == null ? (
           <button onClick={handleStart}>Start</button>
