@@ -12,9 +12,7 @@ function App() {
     timer.current = setInterval(() => {
       setSecond((prev) => prev + 1);
     }, 1000);
-    return () => {
-      clearInterval(timer.current);
-    };
+    setToggle(!toggle);
   }
   function handleRest(e) {
     e.preventDefault();
